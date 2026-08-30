@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-chemistry.css">
+    <title>Chemistry</title>
+</head>
+<body>
+    <div class="page-wrapper"> <!-- when page gets too width, get whitespace sidebars -->
+    <header class="chemistry-header" id="top-of-page">
+        <a href="#main_content" class="skip-link">Skip to main content</a>
+        <!-- banner and menu to go here-->
+        <h1>Chemistry</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="physics.html">Physics</a></li>
+                <li><a href="biology.html">Biology</a></li>
+                <li><a href="more_stuff.html">Extra</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main_content">
+        <section id="chemistry_overview" class="chemistry-section">
+            <h2>What is Chemistry</h2>
+            <p>
+                Chemistry is the science that explores how substances change. It studies atoms, molecules 
+                and materials and explains the processes that transform one substance into another.  
+            </p>
+            <p>
+                At its core, chemistry is about <strong>chemical reactions</strong>, the rearrangement of atoms to create new substances with new properties.
+                The reactions power industry, build materials, grow food and provide energy. Every product you use, every material around you,
+                and every technological advance relies on chemists working behind the scenes. 
+            </p>
+         </section>
+
+         <section id="chemical_reactions" class="chemistry-section">
+            <h2>Chemical reactions</h2>
+            <p>
+                Chemical reactions are processes where <strong>atoms in molecules are rearranged</strong> to form new substances.
+                The atoms themselves stay the same, what changes are the <strong>chemical bonds</strong> that hold them together.
+                When these bonds break and new ones form, the original substances transform into materials with different properties.
+            </p>
+            <p>
+                Reactions often need <strong>energy</strong> to begin, supplied as heat, light or electricity. Some reactions release
+                energy (like combustion), while others absorb it. Many reactions are effectively <strong>irreversible</strong> under
+                everyday conditions because once new bonds form, it takes significant energy or specialised equipment to undo them.
+            </p>
+            <p>
+                These transformations are at the heart of chemistry. They explain how raw materials become useful products, how fuels 
+                release energy, and how small molecules link together to create plastics and fibres.
+            </p>
+         </section>
+
+         <section id="important_reactions" class="chemistry-section">
+            <h2>Important chemical reactions that helped to change the world</h2>
+            <div class="reactions-section">
+                <section id="haber_process">
+                    <h3>The Haber Process</h3>
+                        <div class="reactions-image">
+                            <img src="images/Haber_Bosch_wikimedia_commons2.png" 
+                            alt="The Haber-Bosch chemical reaction">
+                        </div>
+                    <p>
+                        The Haber Process converts nitrogen into ammonia for fertilisers, enabling global food production.
+                    </p>
+                </section>
+                <section id="combustion">
+                    <h3>Combustion</h3>
+                    <div class="reactions-image">
+
+                        <img src="images/Combustion_of_Sulfur_wikimedia_commons2.jpg" 
+                        alt="Combustion of sulphur">
+                    </div>
+                    <p>
+                        Combustion releases energy from fuels to power transport, heating and electricity.
+                    </p>
+                </section>
+                <section id="iron_smelting">
+                    <h3>Iron Smelting</h3>
+                    <div class="reactions-image">
+                        <img src="images/Blast_furnace_tapping_wikimedia_commons2.jpg" 
+                        alt="image of a blast furnace">
+                    </div>
+                    <p>
+                        Extracts iron from ore, producing steel for bridges, buildings and tools.
+                    </p>
+                </section>
+                <section id="polymerisation">
+                    <h3>Polymerisation</h3>
+                    <div class="reactions-image">
+                        <img src="images/Polystyrene_ball-stick_hrev_trp_wikimedia_commons3.png" 
+                        alt="polystyrene as an example of polymerisation">
+                    </div>
+                    <p>
+                        Joins small molecules into long chains, creating plastics and modern materials.
+                    </p>
+                </section>
+            </div>
+         </section>
+
+        <section class="questions">
+            <h2>Test yourself</h2>
+            <section class="question">
+                <p>
+                    <strong>Question 1:</strong> Do atoms stay the same during a chemical reaction?
+                </p>
+                <div>
+                    <label for="answerBox1">Please type yes or no: </label>
+                    <input type="text" id="answerBox1">
+                    <button id="btnQ1">Submit</button>
+                </div>
+                <p id="responseLabel1">Waiting for your answer...</p>
+            </section>
+            <section class="question">
+                <p>
+                    <strong>Question 2:</strong> Is smelting used to extract iron from ore?
+                </p>
+                <div>
+                    <label for="answerBox2">Please type yes or no: </label>
+                    <input type="text" id="answerBox2">
+                    <button id="btnQ2">Submit</button>
+                </div>
+                <p id="responseLabel2">Waiting for your answer...</p>
+            </section>
+            <section class="question">
+                <p>
+                    <strong>Question 3:</strong> What important chemical is made in the Haber process? 
+                </p>
+                <div>
+                    <label for="answerBox3">Please type your answer: </label>
+                    <input type="text" id="answerBox3">
+                    <button id="btnQ3">Submit</button>
+                </div>
+                <p id="responseLabel3">Waiting for your answer...</p>
+            </section>
+            <div>
+                <p><strong>Press button to reset</strong> <button id="resetBtn">Reset Questions</button></p>
+            </div>
+            <div>
+                <p id="responseTotalCorrect">You have answered no questions - score = 0</p>
+            </div>
+        </section>
+        </main>
+    
+    <footer>
+        <p> Last updated 29th August 2026</p>
+        <p> <a href="#top-of-page">Back to top</a></p>
+    </footer>
+
+    <!-- Load javascript file to process questions and answers -->
+     <script src="scripts/chemistry-script.js"></script>
+     </div> <!-- end of the page-wrapper to deal with very wide pages-->
+</body>
+</html>

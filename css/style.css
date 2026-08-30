@@ -1,0 +1,172 @@
+/* This is my CSS for some custom styling and occasionally 
+overriding some of the bootstrap setting 
+Used in index.html and physics.html*/
+
+/*--------------------------------------------------------
+   Colour themes
+----------------------------------------------------------*/
+.bg-physics {
+    background-color: #c97b63 !important; /* terracotta */
+}
+.bg-chemistry {
+    background-color: blue;
+}
+.bg-biology {
+    background-color: rgb(27, 156, 38); /* green */
+}
+.bg-more_stuff {
+    background-color: #000;
+}
+.bg-banner {
+    background-color: #212529 !important; /* charcoal */
+}
+.bg-footer {
+    background-color: #dfe6ec; /* light gray */
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /*mobile first */
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+.bg-footer a {
+    text-decoration: none;
+    color: #000;
+}
+.bg-footer a:hover {
+    text-decoration: underline;
+}
+.bg-footer a:visited {
+    color: #000;
+}
+
+
+
+/* style the homepage hero banner and crop the image to a set height */
+.hero-banner {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* set the card description for the science disciplines to set height and 
+   content layout to make them all appear the same. I had a problem with 
+   some descriptions being longer than other descriptions and this code 
+   fixed it. */
+.discipline .card-description {
+    height: 150px;
+    display: flex;
+    align-items: center; /* vertical centring */
+    justify-content: center; /* horizontal centring */
+    text-align: center;
+}
+
+/* card will rise slightly when mouse hovers over it */
+/* I want this to only apply to the cards for the three */
+/* scientific disciplines cards - physics, chemistry and biology */
+.discipline .card {
+    transition: transform 0.2s ease;
+}
+.discipline .card:hover {
+    transform: translateY(-5px);
+}
+
+/* set the style for the dividing line between sections */
+.section-divider {
+    border: 0;
+    border-top: 1px solid #888;
+}
+
+.accordion-button {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+/* I had trouble with the bootstrap text display sizes; they were
+too big. I created this custom CSS code to set my own text sizes for the
+"STORY OF SCIENCE: PHYSICS" title in the banner. Using the default 
+bootstrap code the flow of the components broke. The hamburger menu
+widget ended up below the title instead of to the right*/  
+.physics-title {
+    font-size: 1.6rem; /* sm */
+}
+
+.page-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* responsive design for the physics banner title */
+
+@media (min-width: 768px) {
+    .physics-title {
+        font-size: 1.9rem; /* md */
+    }
+    .bg-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 992px) {
+    .physics-title {
+        font-size: 2.4rem; /* lg */
+    }
+}
+#physicsCarousel {
+    overflow: hidden;
+}
+.physics-carousel-wrapper {
+    max-height: 450px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.physics-carousel-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+/*Skip to main content link styling. It moves the link completely off-screen*/
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  z-index: 100;
+  transition: top 0.2s ease; 
+}
+
+/* Bring it skip to main content link back into view when a user tabs onto it */
+.skip-link:focus {
+  top: 0;
+}
+
+/* create a shake animation when the user performs an unwanted operation
+   e.g. submitting a null answer */
+.shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-5px);}
+    50% {transform: translateX(5px);}
+    75% {transform: translateX(-5px);}
+    100% {transform: translateX(0);}
+}
+/* debugging trick for dealing with layout problems.
+it makes the background colour for the large container into 
+a vivid yellow colour. Commented out because (hopefully) the
+problem has been solved.
+.container-lg {
+    background: yellow;
+} */

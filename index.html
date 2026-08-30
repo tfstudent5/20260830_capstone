@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project Version 1.0</title>
+    <!-- Get CSS for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- my overriding CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="top-of-page">
+        <!-- hidden link - skip to main content -->
+        <a href="#main_content" class="skip-link">Skip to main content</a>
+        <!--navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-lg bg-banner py-3 px-3 px-lg-0">
+                <a href="#Description" class="navbar-brand">
+                    <h1 class="fw-bold text-white ms-lg-3">
+                        The Story of Science
+                    </h1>
+                </a>
+                <!-- toggle button for mobile nav-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#nav-main" aria-controls="main-nav" aria-expanded="false"
+                aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- navbar links -->
+                <div class="collapse navbar-collapse justify-content-end align-center" id="nav-main">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="physics.html" class="nav-link link-light fw-bold">Physics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="chemistry.html" class="nav-link link-light fw-bold">Chemistry</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="biology.html" class="nav-link link-light fw-bold">Biology</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="more_stuff.html" class="nav-link link-light fw-bold">Extra</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Overall container for website content with a breakpint at lg-->
+    <div class="container-lg px-3 px-lg-0">
+    <main id="main_content" tabindex="-1">
+        <!-- Hero Banner -->
+        <div class="d-none d-lg-block mb-4">
+            <img src="images/helix.png" alt="DNA Helix banner" class="hero-banner">
+        </div> 
+        <hr class="section-divider my-4">
+
+        <!-- Paragraph of text to describe the purpose of the website-->
+        <div class="row mb-4" id="Description">
+            <div class="col fs-4">
+                Science is humanity's way of listening to the world; by observing, questioning, and testing ideas to reveal the order and beauty beneath. 
+                We study Chemistry, Biology, and Physics because each examines the world from a different perspective: matter, life, and the principles 
+                that govern them. Together they give us a clearer, more organised way to understand how everything fits together. Click below to learn 
+                more about them.
+            </div>
+        </div>
+        <hr class="section-divider my-4">
+
+        <!-- Holds three cards: Physics, Chemistry and Biology, goes from horizontal to vertical stacking around lg breakpoint -->
+        <section class="discipline">
+        <div class="row my-5 gx-4 align-items-center justify-content-center">
+            <!-- Card 1 - Physics -->
+                <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+                    <a href="physics.html" class="text-decoration-none text-reset">
+                    <div class="card border-0">
+                        <div class="card-header bg-physics text-white text-center py-3">
+                            <h2 class="card-title">Physics</h2>
+                        </div>
+                        <div class="card-body text-center py-1 px-0">
+                            <img src="images/space-shuttle-300x300.png" alt="Space shuttle launch" class="w-100">
+                            <p class="card-text card-description bg-physics text-white fw-bold py-1 px-3 mb-0 mt-1">
+                                The study of matter, motion, and energy; the principles that explain how the universe behaves.
+                            </p>
+                        </div>
+                    </div>
+                    </a>   
+                </div>
+            
+            <!-- Card 2 - Chemistry -->
+            <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+                <a href="chemistry.html" class="text-decoration-none text-reset">
+                <div class="card border-0">
+                    <div class="card-header bg-chemistry text-white text-center py-3">
+                         <h2 class="card-title">Chemistry</h2>
+                    </div>
+                    <div class="card-body text-center py-1 px-0">
+                        <img src="images/colin00b-chemistry-300x300.png" alt="Chemical formula" class="w-100">
+                        <p class="card-text card-description bg-chemistry text-white fw-bold py-1 px-3 mb-0 mt-1">
+                            The study of matter and its transformations: how substances change, combine, and react to shape the world.
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            
+
+            <!-- Card 3 - Biology -->
+            <div class="col-12 col-sm-10 col-md-8 col-lg-4">
+                <a href="biology.html" class="text-decoration-none text-reset">
+                <div class="card border-0">
+                    <div class="card-header bg-biology text-white text-center py-3">
+                        <h2 class="card-title">Biology</h2>
+                    </div>
+                    <div class="card-body text-center py-1 px-0">
+                        <img src="images/heikiwi-leaf-300x300.png" alt="Chemical formula" class="w-100">
+                        <p class="card-text card-description bg-biology text-white fw-bold py-1 px-3 mb-0 mt-1">
+                            The study of life: how living things grow, adapt, and sustain themselves in an ever changing world.
+                        </p>
+                    </div>
+                </div>
+                </a>
+            </div>  
+        </div>
+        </section>
+        <!-- Text block describing the purpose of the site-->
+        
+        <hr class="section-divider my-4">
+    </main>
+
+        <!-- Footer for the site -->
+    <footer>
+        <div class="row">
+                <div class="col bg-footer border p-4 rounded d-flex justify-content-between align-center">
+                    <span>Last updated 29th August 2026.</span>
+                    <span><a href="#top-of-page">Back to top</a></span>
+                    <span><a href="https://en.wikipedia.org/wiki/Science">Wikipedia Science</a></span>
+                </div> 
+        </div>
+    </footer>
+         
+    </div>
+
+    <!-- Get the JS for bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

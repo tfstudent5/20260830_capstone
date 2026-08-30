@@ -1,0 +1,213 @@
+/* Chemistry webpage CSS styling */ 
+/* Unlike the index and physics.html  pages, I am NOT using BOOTSTRAP */
+/* I am going to use media queries to make a responsive webpage */
+/* The CSS is going to be hand coded, no framework used */
+
+/* Header and navbar styling */
+.chemistry-header {
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+/* Title */
+.chemistry-header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Navigation list */
+.chemistry-header nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.chemistry-header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.chemistry-header nav li {
+    cursor: pointer;
+    color: white;
+}
+.chemistry-header nav a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+/* hover effect */
+.chemistry-header nav a:hover {
+    color: yellow;
+}
+.chemistry-header nav a:active {
+    color: yellow;
+}
+
+/* Main section styling */
+/* e.g. What is Chemistry, Chemical Reactions, Important Chemical Reactions */
+.chemistry-section {
+    margin-bottom: 20px;
+}
+.chemistry-section h2 {
+    background-color: #4a7bd8;
+    color: white;
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 1.6rem;
+    border-radius: 6px 6px 0px 0px;
+}
+.chemistry-section p {
+    background-color: #e6f0ff;
+    color: black;
+    padding: 15px;
+    margin: 0;
+    border-radius: 0px 0px 6px 6px;
+}
+
+/* Sub section styling */
+/* e.g. The Haber Process, Combustion, Polymerisation, Iron Smelting */
+.reactions-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.reactions-section h3 {
+    background-color: #cfe0ff;
+    color: #1a2a4f;
+    padding: 10px;
+    border-radius: 5px 6px 0 0;
+    margin-bottom: 0px;
+}
+
+.reactions-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    margin-top: 0;
+}
+.reactions-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.reactions-section section {
+    display:flex;   
+    flex-direction: column;
+}
+/* expands to fill leftover space */
+.reactions-section p {
+    flex-grow: 1;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6f0ff;
+    border-radius: 5px 6px 0 0;
+    padding-left: 10px;
+}
+.question {
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: #0051ff;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /*mobile first */
+    gap: 0.5rem;
+}
+footer p {
+    margin: 0;
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer a:visited {
+    color: white;
+}
+
+/*Skip to main content link styling. It moves the link completely off-screen*/
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  z-index: 100;
+  transition: top 0.2s ease; 
+}
+
+/* Bring it skip to main content link back into view when a user tabs onto it */
+.skip-link:focus {
+  top: 0;
+}
+/* When the page gets very wide then we want columns of white space on the left 
+and right*/
+.page-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* responsive layout */
+/* The initial design is mobile first - stacked column of images */
+/* Breakpoints at 600px - switch to 2 x 2 grid for images */
+/* and 992px when we switch to 1 x 4 grad for images */
+@media  (min-width: 600px) {
+    .chemistry-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        gap: 0;
+    }
+    .chemistry-header nav ul {
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 0;
+    }
+    .reactions-section {    
+        grid-template-columns: 2fr 2fr;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .reactions-section {    
+        grid-template-columns: repeat(4,1fr);
+    }
+    .page-wrapper {
+        padding: 0 20px;
+    }
+}
+
+
+

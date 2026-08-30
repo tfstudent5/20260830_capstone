@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>The Story of Science - Physics</title>
+
+    <!-- Get CSS for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- my overriding CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="top-of-page">
+    <!--navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+         <div class="container-lg bg-physics py-3 px-3 px-lg-0">
+            <a href="#physics-description" class="navbar-brand">
+                <h1 class="physics-title fw-bold text-white ms-lg-3">
+                    Physics
+                </h1>
+            </a>
+            <!-- toggle button for mobile nav-->
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+             data-bs-target="#nav-main" aria-controls="main-nav" aria-expanded="false"
+             aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar links -->
+             <div class="collapse navbar-collapse justify-content-end align-center" id="nav-main">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link link-light fw-bold">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chemistry.html" class="nav-link link-light fw-bold">Chemistry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="biology.html" class="nav-link link-light fw-bold">Biology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="more_stuff.html" class="nav-link link-light fw-bold">Extra</a>
+                    </li>
+                </ul>
+             </div>
+         </div>
+    </nav>
+    </header>
+
+    <main>
+    <section id="physics-description" class="container-lg py-3 px-3 px-lg-0">
+        <div class="card border-1 shadow-sm rounded-4">
+            <div class="card-header bg-physics text-white rounded-top-4">
+                <h3 class="mb-0">What is Physics?</h3>
+            </div>
+            <div class="card-body py-3 px-4">
+                <p>Physics is all about understanding how the universe works. It explores the rules that govern 
+                    everything around us, from falling objects and electricity to atoms, planets, and distant galaxies. 
+                    The subject covers many branches, including mechanics, thermodynamics, electromagnetism, quantum physics, 
+                    and astrophysics, each focusing on different aspects of nature. Physics moves forward through a 
+                    combination of experiments and theory: experiments help us observe and test the world, while theories 
+                    help explain what we see and predict new discoveries. For centuries, curious and creative thinkers 
+                    have pushed the boundaries of our knowledge, helping us better understand the universe and develop 
+                    technologies that have transformed everyday life.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="physics-branches" class="container-lg py-3 px-3 px-lg-0">
+        <div class="card-header bg-physics text-white rounded-top-4">
+            <h3 class="mb-0">Branches of Physics</h3>
+        </div>       
+        <!-- CAROUSEL CODE -->
+        <!-- This code was obtained from the bootstrap website-->
+        <!-- https://getbootstrap.com/docs/5.0/components/carousel/  -->
+        <div class="physics-carousel-wrapper">
+            <div id="physicsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="images/carousel_images/astronomy.jpg" 
+                            class="physics-carousel-img d-block w-100" alt="astrophysics - space image">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/carousel_images/mechanics.jpg" 
+                            class="physics-carousel-img d-block w-100" alt="mechanics - gears">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/carousel_images/thermodynamics.jpg" 
+                        class="physics-carousel-img d-block w-100" alt="thermodynamics - steam train">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/carousel_images/electromagnetism.jpg" 
+                            class="physics-carousel-img d-block w-100" alt="electromagnetism - radio telescope">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/carousel_images/acoustics.jpg" 
+                            class="physics-carousel-img d-block w-100" alt="acoustics - violin">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/carousel_images/optics.jpg" 
+                            class="physics-carousel-img d-block w-100" alt="optics - camera">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/carousel_images/quantum.jpg" 
+                        class="physics-carousel-img d-block w-100" alt="quantum mechanics - blackboard">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/carousel_images/atoms.png" 
+                        class="physics-carousel-img d-block w-100" alt="atomic physics - molecule">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/carousel_images/nuclear.jpg" 
+                        class="physics-carousel-img d-block w-100" alt="nuclear physics - power station">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/carousel_images/particle.jpg" 
+                        class="physics-carousel-img d-block w-100" alt="particle physics - acclearator">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#physicsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#physicsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ACCORDION CODE -->
+        <div class="accordion mx-auto" id="physics-accordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#mechanics">
+                        Mechanics
+                    </button>
+                </h2>
+
+                <div id="mechanics"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#physics-accordion">
+                    <div class="accordion-body">
+                        <p>Mechanics is the study of motion and forces. It explains why objects move, stop, speed up, 
+                            or change direction. From a ball being thrown through the air to the motion of planets around 
+                            the Sun, mechanics helps us understand how things move in the world around us.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 2nd Accordion item-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#thermodynamics">
+                        Thermodynamics
+                    </button>
+                </h2>
+
+                <div id="thermodynamics"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#physics-accordion">
+                    <div class="accordion-body">
+                        <p>Thermodynamics is the study of heat, energy, and temperature. It helps explain how engines work, 
+                            why ice melts, and how energy flows from one place to another. This branch of physics plays an 
+                            important role in technology, weather, and many everyday processes.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#electromagnetism">
+                        Electromagnetism
+                    </button>
+                </h2>
+
+                <div id="electromagnetism"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#physics-accordion">
+                    <div class="accordion-body">
+                        <p>Electromagnetism explores electricity, magnetism, and their connection. It explains how electric 
+                            circuits, motors, generators, and many modern devices work. Without electromagnetism, we would not 
+                            have electrical power, computers, phones, or many of the technologies we rely on every day.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#optics">
+                        Optics
+                    </button>
+                </h2>
+
+                <div id="optics"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#physics-accordion">
+                    <div class="accordion-body">
+                        <p>Optics is the study of light and how it behaves. It examines reflection, refraction, colour, 
+                            and vision. Optics helps us understand how we see the world and is used in cameras, glasses, 
+                            microscopes, telescopes, and many other tools that use light.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#acoustics">
+                        Acoustics
+                    </button>
+                </h2>
+
+                <div id="acoustics"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#physics-accordion">
+                    <div class="accordion-body">
+                        <p>Acoustics is the study of sound and vibrations. It explains how sounds are produced, 
+                            travel through materials, and are heard by our ears. Acoustics is important in music, 
+                            communication, architecture, and technologies such as speakers, microphones, and 
+                            ultrasound devices.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#quantum">
+                        Quantum Mechanics
+                    </button>
+                </h2>
+
+                <div id="quantum"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#physics-accordion">
+                    <div class="accordion-body">
+                        <p>Quantum physics studies the tiny particles that make up the universe, such as atoms and electrons. 
+                            At these very small scales, nature behaves in surprising ways that differ from everyday experience. 
+                            Quantum physics is essential to modern technology, including computers, lasers, and electronic devices.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#atomic">
+                        Atomic Physics
+                    </button>
+                </h2>
+
+                <div id="atomic"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#physics-accordion">
+                    <div class="accordion-body">
+                        <p>Atomic physics focuses on the structure and behaviour of atoms. It investigates how electrons move 
+                            around atomic nuclei and how atoms interact with light and energy. This branch helps scientists 
+                            understand the building blocks of matter and supports many modern technologies.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#nuclear">
+                        Nuclear Physics
+                    </button>
+                </h2>
+
+                <div id="nuclear"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#physics-accordion">
+                    <div class="accordion-body">
+                        <p>Nuclear physics studies the nuclei found at the centre of atoms. It explores radioactivity, 
+                            nuclear energy, and the forces that hold nuclei together. This field contributes to energy production, 
+                            medical imaging, cancer treatments, and our understanding of how stars generate energy.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#particle">
+                        Particle Physics
+                    </button>
+                </h2>
+
+                <div id="particle"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#physics-accordion">
+                    <div class="accordion-body">
+                        <p>Particle physics investigates the smallest known particles and the forces that act between them. 
+                            Scientists use powerful experiments to explore what matter is made of and how the universe works at 
+                            its most fundamental level. It seeks answers to some of science's biggest questions.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#astrophysics">
+                        Astrophysics
+                    </button>
+                </h2>
+
+                <div id="astrophysics"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#physics-accordion">
+                    <div class="accordion-body">
+                        <p>Astrophysics applies the laws of physics to objects in space. It studies stars, planets, galaxies, black holes, 
+                            and the universe itself. By observing the cosmos, astrophysicists learn how celestial objects form, evolve, 
+                            and interact across vast distances.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div> <!-- end of accordion -->
+    </section>
+
+    <section id="physics-questions" class="container-lg py-3 px-3 px-lg-0">
+        <div class="card border-1 shadow-sm rounded-4">
+            <div class="card-header bg-physics text-white rounded-top-4">
+                <h3 class="mb-0">Test yourself?</h3>
+            </div>
+            <div class="card-body py-3 px-4">
+                <p id="questionText" class="lead"></p>
+                <form id="quizForm">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer" id="yesBtn" value="yes">
+                        <label class="form-check-label" for="yesBtn">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer" id="noBtn" value="no">
+                        <label class="form-check-label" for="noBtn">No</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+                <div class="mt-3">
+                    <span id="resultIcon" style="font-size: 2rem;"></span>
+                    <p id="scoreText" class="fw-bold"></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    </main>
+    
+    <!-- Footer for the site -->
+    <footer>
+        <div class="container-lg py-3 px-3 px-lg-0">
+        <div class="row">
+                <div class="col bg-footer border p-4 rounded d-flex justify-content-between align-center">
+                    <span>
+                          <strong>Latest update:</strong> 30 Aug 2026, 
+                          <strong>Created: </strong> 18th Aug 2026.
+                    </span>
+                    <span><a href="#top-of-page">Back to top</a></span>
+                    <span><a href="https://en.wikipedia.org/wiki/Physics" alt="Link to wikipedia physics page">Wikipedia - Physics</a></span>
+                </div> 
+        </div>
+        </div>
+    </footer>
+
+    <!-- Get the JS for bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Get the JS for the physics questions section -->
+     <script src="scripts/physics-script.js"></script>
+</body>
+</html>
