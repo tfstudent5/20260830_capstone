@@ -5,6 +5,9 @@ Submitted: 30 August 2026
 ## Theme
 The project uses science as its central theme, with four sub‑pages covering Physics, Chemistry, Biology, and additional interactive features.
 
+## Errors
+- wave webAIM.org complains about contrast for the bootstrap carousel.
+
 ## Structure
 The main page (`index.html`) uses Bootstrap and links to the following pages:
 
