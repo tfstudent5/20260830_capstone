@@ -121,7 +121,7 @@
 
 button {
     background-color: #28f32e;
-    color: black;
+    color: black !important;
     border: none;
     padding: 10px 20px;
     margin: 0.5em;
