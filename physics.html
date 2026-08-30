@@ -392,7 +392,8 @@
                     <button type="submit" class="btn btn-primary mt-3">Submit</button>
                 </form>
                 <div class="mt-3">
-                    <span id="resultIcon" style="font-size: 2rem;"></span>
+                    /* the aria stuff is included because wave.webAIM.org complains a lot */
+                    <span id="resultIcon" aria-live="polite" aria-label="Result icon" style="font-size: 2rem;"></span>
                     <p id="scoreText" class="fw-bold"></p>
                 </div>
             </div>
