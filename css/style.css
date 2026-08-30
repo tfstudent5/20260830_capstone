@@ -6,13 +6,13 @@ Used in index.html and physics.html*/
    Colour themes
 ----------------------------------------------------------*/
 .bg-physics {
-    background-color: #c97b63 !important; /* terracotta */
+    background-color: #8B0000 !important; /* deep clay red */
 }
 .bg-chemistry {
     background-color: blue;
 }
 .bg-biology {
-    background-color: rgb(27, 156, 38); /* green */
+    background-color: rgb(3, 73, 9); /* green */
 }
 .bg-more_stuff {
     background-color: #000;
